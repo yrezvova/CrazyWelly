@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8CCD10E718857E6F0054C0AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCD10E618857E6F0054C0AD /* Foundation.framework */; };
+		8CCD10E918857E6F0054C0AD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCD10E818857E6F0054C0AD /* CoreGraphics.framework */; };
+		8CCD10EB18857E6F0054C0AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCD10EA18857E6F0054C0AD /* UIKit.framework */; };
+		8CCD10F118857E6F0054C0AD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8CCD10EF18857E6F0054C0AD /* InfoPlist.strings */; };
+		8CCD10F318857E6F0054C0AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCD10F218857E6F0054C0AD /* main.m */; };
+		8CCD10F718857E6F0054C0AD /* CWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCD10F618857E6F0054C0AD /* CWAppDelegate.m */; };
+		8CCD10FA18857E6F0054C0AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CCD10F818857E6F0054C0AD /* Main.storyboard */; };
+		8CCD10FD18857E6F0054C0AD /* CWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCD10FC18857E6F0054C0AD /* CWViewController.m */; };
+		8CCD10FF18857E6F0054C0AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CCD10FE18857E6F0054C0AD /* Images.xcassets */; };
+		8CCD110618857E6F0054C0AD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCD110518857E6F0054C0AD /* XCTest.framework */; };
+		8CCD110718857E6F0054C0AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCD10E618857E6F0054C0AD /* Foundation.framework */; };
+		8CCD110818857E6F0054C0AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCD10EA18857E6F0054C0AD /* UIKit.framework */; };
+		8CCD111018857E6F0054C0AD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8CCD110E18857E6F0054C0AD /* InfoPlist.strings */; };
+		8CCD111218857E6F0054C0AD /* CrazyWellyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCD111118857E6F0054C0AD /* CrazyWellyTests.m */; };
+		8CCD11201886D4170054C0AD /* CWDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCD111F1886D4170054C0AD /* CWDetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8CCD110918857E6F0054C0AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CCD10DB18857E6F0054C0AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CCD10E218857E6F0054C0AD;
+			remoteInfo = ppppp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8CCD10E318857E6F0054C0AD /* CrazyWelly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrazyWelly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CCD10E618857E6F0054C0AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8CCD10E818857E6F0054C0AD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8CCD10EA18857E6F0054C0AD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8CCD10EE18857E6F0054C0AD /* CrazyWelly-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrazyWelly-Info.plist"; sourceTree = "<group>"; };
+		8CCD10F018857E6F0054C0AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8CCD10F218857E6F0054C0AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8CCD10F418857E6F0054C0AD /* CrazyWelly-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CrazyWelly-Prefix.pch"; sourceTree = "<group>"; };
+		8CCD10F518857E6F0054C0AD /* CWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWAppDelegate.h; sourceTree = "<group>"; };
+		8CCD10F618857E6F0054C0AD /* CWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWAppDelegate.m; sourceTree = "<group>"; };
+		8CCD10F918857E6F0054C0AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8CCD10FB18857E6F0054C0AD /* CWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWViewController.h; sourceTree = "<group>"; };
+		8CCD10FC18857E6F0054C0AD /* CWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWViewController.m; sourceTree = "<group>"; };
+		8CCD10FE18857E6F0054C0AD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8CCD110418857E6F0054C0AD /* CrazyWellyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrazyWellyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CCD110518857E6F0054C0AD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8CCD110D18857E6F0054C0AD /* CrazyWellyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrazyWellyTests-Info.plist"; sourceTree = "<group>"; };
+		8CCD110F18857E6F0054C0AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8CCD111118857E6F0054C0AD /* CrazyWellyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrazyWellyTests.m; sourceTree = "<group>"; };
+		8CCD111E1886D4170054C0AD /* CWDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWDetailViewController.h; sourceTree = "<group>"; };
+		8CCD111F1886D4170054C0AD /* CWDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWDetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CCD10E018857E6F0054C0AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CCD10E918857E6F0054C0AD /* CoreGraphics.framework in Frameworks */,
+				8CCD10EB18857E6F0054C0AD /* UIKit.framework in Frameworks */,
+				8CCD10E718857E6F0054C0AD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CCD110118857E6F0054C0AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CCD110618857E6F0054C0AD /* XCTest.framework in Frameworks */,
+				8CCD110818857E6F0054C0AD /* UIKit.framework in Frameworks */,
+				8CCD110718857E6F0054C0AD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8CCD10DA18857E6F0054C0AD = {
+			isa = PBXGroup;
+			children = (
+				8CCD10EC18857E6F0054C0AD /* CrazyWelly */,
+				8CCD110B18857E6F0054C0AD /* CrazyWellyTests */,
+				8CCD10E518857E6F0054C0AD /* Frameworks */,
+				8CCD10E418857E6F0054C0AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8CCD10E418857E6F0054C0AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CCD10E318857E6F0054C0AD /* CrazyWelly.app */,
+				8CCD110418857E6F0054C0AD /* CrazyWellyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CCD10E518857E6F0054C0AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CCD10E618857E6F0054C0AD /* Foundation.framework */,
+				8CCD10E818857E6F0054C0AD /* CoreGraphics.framework */,
+				8CCD10EA18857E6F0054C0AD /* UIKit.framework */,
+				8CCD110518857E6F0054C0AD /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8CCD10EC18857E6F0054C0AD /* CrazyWelly */ = {
+			isa = PBXGroup;
+			children = (
+				8CCD10F518857E6F0054C0AD /* CWAppDelegate.h */,
+				8CCD10F618857E6F0054C0AD /* CWAppDelegate.m */,
+				8CCD10F818857E6F0054C0AD /* Main.storyboard */,
+				8CCD111E1886D4170054C0AD /* CWDetailViewController.h */,
+				8CCD111F1886D4170054C0AD /* CWDetailViewController.m */,
+				8CCD10FB18857E6F0054C0AD /* CWViewController.h */,
+				8CCD10FC18857E6F0054C0AD /* CWViewController.m */,
+				8CCD10FE18857E6F0054C0AD /* Images.xcassets */,
+				8CCD10ED18857E6F0054C0AD /* Supporting Files */,
+			);
+			name = CrazyWelly;
+			path = ppppp;
+			sourceTree = "<group>";
+		};
+		8CCD10ED18857E6F0054C0AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CCD10EE18857E6F0054C0AD /* CrazyWelly-Info.plist */,
+				8CCD10EF18857E6F0054C0AD /* InfoPlist.strings */,
+				8CCD10F218857E6F0054C0AD /* main.m */,
+				8CCD10F418857E6F0054C0AD /* CrazyWelly-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8CCD110B18857E6F0054C0AD /* CrazyWellyTests */ = {
+			isa = PBXGroup;
+			children = (
+				8CCD111118857E6F0054C0AD /* CrazyWellyTests.m */,
+				8CCD110C18857E6F0054C0AD /* Supporting Files */,
+			);
+			name = CrazyWellyTests;
+			path = pppppTests;
+			sourceTree = "<group>";
+		};
+		8CCD110C18857E6F0054C0AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CCD110D18857E6F0054C0AD /* CrazyWellyTests-Info.plist */,
+				8CCD110E18857E6F0054C0AD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CCD10E218857E6F0054C0AD /* CrazyWelly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CCD111518857E6F0054C0AD /* Build configuration list for PBXNativeTarget "CrazyWelly" */;
+			buildPhases = (
+				8CCD10DF18857E6F0054C0AD /* Sources */,
+				8CCD10E018857E6F0054C0AD /* Frameworks */,
+				8CCD10E118857E6F0054C0AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrazyWelly;
+			productName = ppppp;
+			productReference = 8CCD10E318857E6F0054C0AD /* CrazyWelly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8CCD110318857E6F0054C0AD /* CrazyWellyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CCD111818857E6F0054C0AD /* Build configuration list for PBXNativeTarget "CrazyWellyTests" */;
+			buildPhases = (
+				8CCD110018857E6F0054C0AD /* Sources */,
+				8CCD110118857E6F0054C0AD /* Frameworks */,
+				8CCD110218857E6F0054C0AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CCD110A18857E6F0054C0AD /* PBXTargetDependency */,
+			);
+			name = CrazyWellyTests;
+			productName = pppppTests;
+			productReference = 8CCD110418857E6F0054C0AD /* CrazyWellyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CCD10DB18857E6F0054C0AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CW;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Зоя Прибыткова";
+				TargetAttributes = {
+					8CCD110318857E6F0054C0AD = {
+						TestTargetID = 8CCD10E218857E6F0054C0AD;
+					};
+				};
+			};
+			buildConfigurationList = 8CCD10DE18857E6F0054C0AD /* Build configuration list for PBXProject "CrazyWelly" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8CCD10DA18857E6F0054C0AD;
+			productRefGroup = 8CCD10E418857E6F0054C0AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CCD10E218857E6F0054C0AD /* CrazyWelly */,
+				8CCD110318857E6F0054C0AD /* CrazyWellyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CCD10E118857E6F0054C0AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CCD10FF18857E6F0054C0AD /* Images.xcassets in Resources */,
+				8CCD10F118857E6F0054C0AD /* InfoPlist.strings in Resources */,
+				8CCD10FA18857E6F0054C0AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CCD110218857E6F0054C0AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CCD111018857E6F0054C0AD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CCD10DF18857E6F0054C0AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CCD10F718857E6F0054C0AD /* CWAppDelegate.m in Sources */,
+				8CCD10F318857E6F0054C0AD /* main.m in Sources */,
+				8CCD10FD18857E6F0054C0AD /* CWViewController.m in Sources */,
+				8CCD11201886D4170054C0AD /* CWDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CCD110018857E6F0054C0AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CCD111218857E6F0054C0AD /* CrazyWellyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8CCD110A18857E6F0054C0AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CCD10E218857E6F0054C0AD /* CrazyWelly */;
+			targetProxy = 8CCD110918857E6F0054C0AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8CCD10EF18857E6F0054C0AD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CCD10F018857E6F0054C0AD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8CCD10F818857E6F0054C0AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CCD10F918857E6F0054C0AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8CCD110E18857E6F0054C0AD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CCD110F18857E6F0054C0AD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8CCD111318857E6F0054C0AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8CCD111418857E6F0054C0AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CCD111618857E6F0054C0AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ppppp/CrazyWelly-Prefix.pch";
+				INFOPLIST_FILE = "ppppp/CrazyWelly-Info.plist";
+				PRODUCT_NAME = CrazyWelly;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8CCD111718857E6F0054C0AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ppppp/CrazyWelly-Prefix.pch";
+				INFOPLIST_FILE = "ppppp/CrazyWelly-Info.plist";
+				PRODUCT_NAME = CrazyWelly;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8CCD111918857E6F0054C0AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ppppp.app/ppppp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ppppp/ppppp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "pppppTests/CrazyWellyTests-Info.plist";
+				PRODUCT_NAME = CrazyWellyTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8CCD111A18857E6F0054C0AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ppppp.app/ppppp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ppppp/ppppp-Prefix.pch";
+				INFOPLIST_FILE = "pppppTests/CrazyWellyTests-Info.plist";
+				PRODUCT_NAME = CrazyWellyTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CCD10DE18857E6F0054C0AD /* Build configuration list for PBXProject "CrazyWelly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CCD111318857E6F0054C0AD /* Debug */,
+				8CCD111418857E6F0054C0AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CCD111518857E6F0054C0AD /* Build configuration list for PBXNativeTarget "CrazyWelly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CCD111618857E6F0054C0AD /* Debug */,
+				8CCD111718857E6F0054C0AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CCD111818857E6F0054C0AD /* Build configuration list for PBXNativeTarget "CrazyWellyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CCD111918857E6F0054C0AD /* Debug */,
+				8CCD111A18857E6F0054C0AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8CCD10DB18857E6F0054C0AD /* Project object */;
+}
