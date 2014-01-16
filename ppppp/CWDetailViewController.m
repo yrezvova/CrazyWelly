@@ -7,17 +7,15 @@
 //
 
 #import "CWDetailViewController.h"
+#import "CWEntity.h"
 
 @interface CWDetailViewController ()
 
 @end
 
 @implementation CWDetailViewController
-
 @synthesize titleLabel;
 @synthesize textLabel;
-@synthesize titleDetail;
-@synthesize textDetail;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,9 +30,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.titleLabel.text = titleDetail;
-    self.textLabel.text = textDetail;
-    self.title = titleDetail;
+    self.titleLabel.text = self.selectedEntity.title;
+    self.textLabel.text = self.selectedEntity.text;
+    self.title = self.selectedEntity.title;
     
     
 }

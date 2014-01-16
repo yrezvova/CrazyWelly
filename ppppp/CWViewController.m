@@ -8,23 +8,21 @@
 
 #import "CWViewController.h"
 #import "CWDetailViewController.h"
-
-
+#import "CWRequestController.h"
+#import "CWEntity.h"
+#import "CWCell.h"
 
 @interface CWViewController ()
 @property (strong, nonatomic) NSTimer *timer;
 
 @end
 
-@implementation CWViewController {
-    NSArray *jResult;
-    NSDictionary *tweet;
-    NSString *str;
-}
+@implementation CWViewController
 
 @synthesize tableView = _tableView;
+@synthesize jResult = _jResult;
 
-double timerInterval = 10.0f;
+double timerInterval = 60.0f;
 
 - (NSTimer *) timer {
     if (!_timer) {
@@ -36,31 +34,30 @@ double timerInterval = 10.0f;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    jResult = [[CWViewController alloc] result];
-    
+    [self getData];
     [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
 }
 
 - (void)onTick:(NSTimer*)timer {
     NSLog(@"Tic....");
-    jResult = [[CWViewController alloc] result];
-
-    [self.tableView reloadData];
+    [self getData];
 }
 
-- (NSArray *) result
+- (void)getData
 {
-    NSArray *resultArray;
-    NSError *error = nil;
-    NSURL *url = [NSURL URLWithString:@"http://crazy-dev.wheely.com"];
-    NSData *jData = [NSData dataWithContentsOfURL:url];
-    if (jData != nil) {
-        error = nil;
-        
-        resultArray = [NSJSONSerialization JSONObjectWithData:jData options:NSJSONReadingMutableContainers error:&error];
-    }
-    return resultArray;
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH,  0ul), ^{
+        id result = [CWRequestController getCollectonWithURL:[NSURL URLWithString:@"http://crazy-dev.wheely.com/"]];
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            if ([result isKindOfClass:[NSError class]]) {
+                
+            }
+            else
+            {
+                _jResult = [CWEntity createEntityCollectionWithArray:result];
+                [self.tableView reloadData];
+            }
+        });
+    });
 }
 
 - (void)didReceiveMemoryWarning {
@@ -72,45 +69,42 @@ double timerInterval = 10.0f;
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (CGFloat)getTextHeight:(NSString *)text
+{
+    UITextView *tv = [[UITextView alloc] initWithFrame:CGRectMake(15, 20, 272, 28)];
+    [tv setText:text];
+    CGSize size = [tv sizeThatFits:CGSizeMake(272, FLT_MAX)];
+    return size.height+30;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [self getTextHeight:[(CWEntity *)[_jResult objectAtIndex:indexPath.row] text]];
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [jResult count];
+    return [_jResult count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *simpleTableIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
-    
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
-    }
-    
-    tweet = [jResult objectAtIndex:indexPath.row];
-    str = [tweet objectForKey:@"title"];
-    cell.textLabel.text = str;
-    str = [tweet objectForKey:@"text"];
-    cell.detailTextLabel.text = str;
-    
+    CWCell *cell = (CWCell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    cell.title.text = [(CWEntity *)[_jResult objectAtIndex:indexPath.row] title];
+    cell.text.text = [(CWEntity *)[_jResult objectAtIndex:indexPath.row] text];
     return cell;
 }
-
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         CWDetailViewController *destViewController = segue.destinationViewController;
-        tweet = [jResult objectAtIndex:indexPath.row];
-        str = [tweet objectForKey:@"title"];
-        destViewController.titleDetail = str;
-        str = [tweet objectForKey:@"text"];
-        destViewController.textDetail = str;
+        destViewController.selectedEntity = [_jResult objectAtIndex:indexPath.row];
     }
 }
 
 
 - (IBAction)refreshButton:(id)sender {
-    jResult = [[CWViewController alloc] result];
-    
-    [self.tableView reloadData];
+    [self getData];
 }
 @end

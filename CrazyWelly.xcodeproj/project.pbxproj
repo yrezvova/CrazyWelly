@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C6666E3188863FD00B89B88 /* CWRequestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C6666E2188863FD00B89B88 /* CWRequestController.m */; };
+		8C6666E7188875A000B89B88 /* CWEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C6666E6188875A000B89B88 /* CWEntity.m */; };
+		8C6666EC18887E2500B89B88 /* CWCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C6666EB18887E2500B89B88 /* CWCell.m */; };
 		8CCD10E718857E6F0054C0AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCD10E618857E6F0054C0AD /* Foundation.framework */; };
 		8CCD10E918857E6F0054C0AD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCD10E818857E6F0054C0AD /* CoreGraphics.framework */; };
 		8CCD10EB18857E6F0054C0AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCD10EA18857E6F0054C0AD /* UIKit.framework */; };
@@ -35,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C6666E1188863FD00B89B88 /* CWRequestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWRequestController.h; sourceTree = "<group>"; };
+		8C6666E2188863FD00B89B88 /* CWRequestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWRequestController.m; sourceTree = "<group>"; };
+		8C6666E5188875A000B89B88 /* CWEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWEntity.h; sourceTree = "<group>"; };
+		8C6666E6188875A000B89B88 /* CWEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWEntity.m; sourceTree = "<group>"; };
+		8C6666EA18887E2500B89B88 /* CWCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWCell.h; sourceTree = "<group>"; };
+		8C6666EB18887E2500B89B88 /* CWCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWCell.m; sourceTree = "<group>"; };
 		8CCD10E318857E6F0054C0AD /* CrazyWelly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrazyWelly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CCD10E618857E6F0054C0AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8CCD10E818857E6F0054C0AD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -82,6 +91,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C6666E41888640500B89B88 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				8C6666E1188863FD00B89B88 /* CWRequestController.h */,
+				8C6666E2188863FD00B89B88 /* CWRequestController.m */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		8C6666E818887DEA00B89B88 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				8C6666E5188875A000B89B88 /* CWEntity.h */,
+				8C6666E6188875A000B89B88 /* CWEntity.m */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		8C6666E918887E0100B89B88 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8C6666EA18887E2500B89B88 /* CWCell.h */,
+				8C6666EB18887E2500B89B88 /* CWCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		8CCD10DA18857E6F0054C0AD = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +151,9 @@
 		8CCD10EC18857E6F0054C0AD /* CrazyWelly */ = {
 			isa = PBXGroup;
 			children = (
+				8C6666E918887E0100B89B88 /* Cell */,
+				8C6666E818887DEA00B89B88 /* Entity */,
+				8C6666E41888640500B89B88 /* Request */,
 				8CCD10F518857E6F0054C0AD /* CWAppDelegate.h */,
 				8CCD10F618857E6F0054C0AD /* CWAppDelegate.m */,
 				8CCD10F818857E6F0054C0AD /* Main.storyboard */,
@@ -259,8 +298,11 @@
 			files = (
 				8CCD10F718857E6F0054C0AD /* CWAppDelegate.m in Sources */,
 				8CCD10F318857E6F0054C0AD /* main.m in Sources */,
+				8C6666E7188875A000B89B88 /* CWEntity.m in Sources */,
 				8CCD10FD18857E6F0054C0AD /* CWViewController.m in Sources */,
+				8C6666E3188863FD00B89B88 /* CWRequestController.m in Sources */,
 				8CCD11201886D4170054C0AD /* CWDetailViewController.m in Sources */,
+				8C6666EC18887E2500B89B88 /* CWCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
